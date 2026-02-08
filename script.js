@@ -46,7 +46,7 @@ async function generateQuiz() {
 
     // 嘗試使用的模型清單 (如果第一個失敗，你可以手動改這裡)
     // 建議使用 'gemini-1.5-flash' 或 'gemini-pro'
-    const modelName = 'gemini-1.5-flash'; 
+     const modelName = 'gemini-1.5-flash';
 
     try {
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${apiKey}`, {
@@ -196,3 +196,4 @@ function resetSystem() {
     document.getElementById('result-panel').classList.add('hidden');
     document.getElementById('setup-panel').classList.remove('hidden');
 }
+
