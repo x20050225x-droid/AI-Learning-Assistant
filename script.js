@@ -197,4 +197,3 @@ function resetSystem() {
     document.getElementById('setup-panel').classList.remove('hidden');
 }
 
-
