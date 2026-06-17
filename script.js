@@ -1,9 +1,15 @@
+/**
+ * AI 學習助理 - 主程式
+ * 功能：透過 Gemini API 分析教材內容，自動生成測驗題目
+ * 流程：輸入 API Key → 貼上教材 → AI 出題 → 作答 → 即時批改與解析
+ */
+
 // 全域狀態管理
-let questions = [];
-let curIdx = 0;
-let score = 0;
-let qStartTime;
-let timeLogs = [];
+let questions = [];   // AI 生成的題目陣列
+let curIdx = 0;       // 目前作答的題目索引
+let score = 0;        // 目前得分
+let qStartTime;       // 每題開始作答的時間戳記
+let timeLogs = [];    // 每題作答時間紀錄
 
 /**
  * 核心功能：生成題庫
